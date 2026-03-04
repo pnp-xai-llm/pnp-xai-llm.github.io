@@ -19,5 +19,5 @@ This page allows users to generate text completions from a given prompt and  dec
 ### Output
  - Generated completions
 
-### Example
-![alt text](image.png)
+
+<img src="https://d2acbkrrljl37x.cloudfront.net/pnp-xai-llm/XAI-0-Completion.webp" width="100%" height="auto"> 
