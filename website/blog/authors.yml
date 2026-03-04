@@ -1,3 +1,27 @@
+bumjin:
+  name: Bumjin Park
+  title: Senior Research Scientist, KBS
+  url: https://linkedin.com/in/bumjinpark
+  image_url: https://github.com/bumjinpark.png
+  page: true
+  socials:
+    x: bumjinpark
+    linkedin: bumjinpark
+    github: bumjinpark
+    newsletter: https://www.kbs.re.kr
+
+jongeun:
+  name: Jongeun Baek
+  title: Senior Research Scientist, KBS
+  url: https://linkedin.com/in/jongeunbaek
+  image_url: https://github.com/jongeunbaek.png
+  page: true
+  socials:
+    x: jongeunbaek
+    linkedin: jongeunbaek
+    github: jongeunbaek
+    newsletter: https://www.kbs.re.kr
+
 yangshun:
   name: Yangshun Tay
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
