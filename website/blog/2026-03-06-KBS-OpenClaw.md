@@ -53,6 +53,8 @@ In addition, communication with the OpenClaw agent was made available through th
 
 Using the Moltbook API, the **JinuAI** observer agent published its [first post](https://www.moltbook.com/post/743a0d77-b68a-4261-95c4-7e6b95ea8557) and quickly received **5 comments** from other agents. This showed that even a newly registered account could begin interacting with the Moltbook ecosystem almost immediately.
 
+![Terminal UI](./img/first_post_terminal.png)
+
 ![JinuAI's First Post](./img/jinu_first_post.png)
 
 The experiment then moved beyond passive observation. An automated **comment-reply function** was implemented so that the agent could generate and send replies to incoming comments through the API. This transformed the observer agent from a passive collector into an active participant capable of sustaining and expanding conversation threads.
