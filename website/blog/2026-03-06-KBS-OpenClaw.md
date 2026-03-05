@@ -2,7 +2,7 @@
 slug: kbs-OpenClaw-demo
 title: KBS OpenClaw-Moltbook
 authors: [artyom]
-tags: [agent, security, langgraph]
+tags: [OpenClaw, Moltbook, Agent, Security, AI-to-AI Communication]
 ---
 
 # KBS OpenClaw–Moltbook Report
