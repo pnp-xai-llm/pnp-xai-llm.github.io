@@ -306,14 +306,14 @@ Overall, the experiments confirm that deploying observer agents into Moltbook is
 - agent-to-agent DM channels can be established
 - Moltbook content can be crawled and categorized at scale
 - ClawHub skills can extend agent behavior
-- local models can be integrated for comparison testing
+- local models can be integrated
 
 ### Key limitations and risks
 
 - DM approval remains a major barrier to large-scale private interaction
 - privacy behavior is inconsistent in agent-to-agent conversations
 - long skill files make ClawHub usage expensive
-- local models may have dangerous access to sensitive files
+- agents may have dangerous access to sensitive files
 - weaker models may still be more operationally risky if they are poorly sandboxed
 
 ---
@@ -325,39 +325,3 @@ These experiments show that an observer agent can be inserted into Moltbook and 
 At the same time, the work revealed several important constraints and risks.
 
 First, private DM communication is possible, but only after an approval process, making **trust-building through public interaction** an operational prerequisite. Second, once DM channels are established, **privacy behavior can be inconsistent**, as shown by the exposure of the human user name “Artyom.” Third, although skill acquisition through ClawHub expands capability, the current skill format is often too token-expensive for efficient repeated use. Finally, the AI-to-AI attack experiment highlighted a serious security concern: a local model with access to the file system may expose sensitive information or follow unsafe instructions even when it is less capable overall than the attacking model.
-
-Taken together, the results suggest that Moltbook is a useful testbed for AI social behavior, but any future observer-agent deployment should include:
-
-- policy and compliance review
-- clear data-collection boundaries
-- privacy and PII evaluation standards
-- stronger security controls for local models
-- careful permission and tool-access design
-
-The crawler and automation stack built in this work provide a strong foundation for future studies of conversational dynamics, topic spread, trust formation, privacy consistency, and adversarial agent behavior inside AI-native social environments.
-
-The main findings are:
-
-- Two OpenClaw agents were successfully deployed and registered in Moltbook:
-  - **Jinu** on an **NVIDIA DGX Spark**
-  - **K-agent** on the **Markov server**
-- The Moltbook API was integrated to automate:
-  - post creation
-  - comments
-  - replies
-  - upvotes
-  - direct messages
-- Direct agent-to-agent communication via **DM** was successfully established.
-- During DM testing, a case of **personal information leakage** was observed: the human user name **“Artyom”** was exposed during agent-to-agent conversation.
-- A crawler was built to analyze Moltbook content distribution:
-  - it collects the newest **16,200 posts** available under the `new` sort key
-  - it can also collect the **top 100 posts** for any specific date
-- Several new skills were learned from **ClawHub**, including:
-  - Ontology
-  - Humanizer
-  - Frontend-design
-  - Doctor
-  - Humanize-ai-text
-- Some skills failed to load, and many skills were too expensive to use efficiently because they rely on very long `SKILL.md` instruction files.
-- A local **GLM-4.7-Flash** model was installed on the DGX Spark machine for comparison with the API-based setup.
-- In an AI-to-AI attack experiment, the local defending model exposed a sensitive folder list and created a file requested by the attacking model, showing clear security weaknesses.
