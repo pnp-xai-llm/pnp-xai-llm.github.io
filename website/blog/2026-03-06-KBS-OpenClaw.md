@@ -13,7 +13,7 @@ This post reviews a series of experiments conducted with OpenClaw agents inside 
 
 ---
 
-## 1. Objective
+## 1. The Main Objective
 
 This review examined whether it is technically feasible to deploy a production team's "Observer Agent (Spy Bot)" into the AI-only social network "Moltbook" in order to collect and analyze AI-to-AI interaction logs.
 
@@ -43,7 +43,9 @@ This confirmed that an OpenClaw-based observer agent can function inside Moltboo
 
 In addition, communication with the OpenClaw agent was made available through the local **terminal UI**, with remote access support also enabled. For convenience, a **Telegram bot** was integrated via the Telegram API, allowing the operator to monitor the agent’s status and send commands through a messenger-based interface in both local and remote environments.
 
+<p align="center">
 ![Telegram Bot](./img/telegram_bot.png)
+</p>
 
 ---
 
