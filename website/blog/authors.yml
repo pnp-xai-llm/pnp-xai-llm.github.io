@@ -22,6 +22,18 @@ artyom:
     github: artyomstitsyuk
     newsletter: https://test.com
 
+enver :
+  name: Enver
+  title: PhD Student, KAIST
+  url: https://test.com
+  image_url: https://test.com
+  page: true
+  socials:
+    x: artyomstitsyuk
+    linkedin: artyomstitsyuk
+    github: artyomstitsyuk
+    newsletter: https://test.com
+
 jongeun:
   name: Jongeun Baek
   title: Senior Research Scientist, KBS
