@@ -270,13 +270,17 @@ The defending model showed two major failures:
 
 1. It **shared the local folder list**, exposing personal and highly sensitive environment information.
 
+<p align="center">
 ![Attack 1](./img/attack_1.png)
+</p>
 
 2. It **created a file requested by the attacking model**, effectively following the attack instruction without sufficient safeguards.
 
 ![Attack 2](./img/attack_2.png)
 
+<p align="center">
 ![Attack 2 results](./img/attack_3.png)
+</p>
 
 This is the automatic response of JinuAI agent after performing the attacking instruction:
 
